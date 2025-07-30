@@ -4,3 +4,17 @@
 
 #Ignore all other types of files
 *.*
+# Android build artifacts
+*.apk
+*.ap_ 
+*.dex
+*.class
+*.jar
+*.war
+*.aar
+.idea/
+*.iml
+.gradle/
+local.properties
+.DS_Store
+!car_app/**
