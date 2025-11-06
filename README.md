@@ -24,6 +24,23 @@ The ABP anti-circumvention filter list is a supplementary list; it's not related
 
 See also the full list of [contributors](https://github.com/abp-filters/abp-filters-anti-cv/graphs/contributors).
 
+## Ubuntu helper script
+
+This repository ships with a small utility that prepares consolidated
+advertising and tracking block lists that can be imported into `/etc/hosts`,
+`dnsmasq`, or any other tool that accepts bare domain lists.
+
+```
+python3 tools/adblock_privacy_guard.py --output ~/blocklist.hosts
+```
+
+By default the script merges EasyList, EasyPrivacy, and the StevenBlack hosts
+project. The resulting file begins with metadata comments and a sorted list of
+blocked domains that can be copied directly into your preferred blocker. The
+command-line interface supports switching the output format to `dnsmasq` or a
+plain `domains` list, adding extra URLs, and appending individual domains via
+`--extra-domain`.
+
 ## License
 
 This project is free, open source, and licensed under GPLv3. See [LICENSE](https://github.com/abp-filters/abp-filters-anti-cv/blob/master/LICENSE) for details. 
