@@ -1,6 +1,7 @@
-#Track txt/md files
-!*.txt
-!*.md
-
 #Ignore all other types of files
 *.*
+
+# Track text, documentation, and tooling helpers
+!*.txt
+!*.md
+!tools/*.py
